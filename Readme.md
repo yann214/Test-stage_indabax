@@ -32,6 +32,8 @@ pip install -r requirements.txt
 ## 📁 Structure du projet
 
 ```
+├──data/                                        # Dossier comportant une dataset pour l'evaluation de notre FSt
+├       ├──/dataset_normalisation_0_1000.csv    # dataset en question.
 ├── script_sauvegarde.py                        # Script de création du fichier FAR
 ├── script.py                                   # Script de normalisation de texte
 ├── cardinal_numbers.far                        # Fichier FAR compilé (généré)
@@ -119,6 +121,38 @@ Texte> J'ai 25 ans
 Texte> quit
 
 👋 Au revoir!
+```
+### Comment repoduire l'obtention de mon score WER
+```bash
+python script_wer.py "data/dataset_normalisation_0_1000.csv"
+```
+**Résultat :**
+```
+============================================================
+CALCUL DU WER - Normalisation de Nombres Cardinaux
+============================================================
+
+🔧 Chargement du FST...
+✓ FST chargé avec succès
+📂 Chargement du dataset: data/dataset_normalisation_0_1000.csv
+✓ Dataset chargé: 133 lignes
+
+🔄 Normalisation des phrases...
+  Traité: 100/133 phrases
+✓ Normalisation terminée: 133 phrases traitées
+
+📊 Calcul du WER...
+
+============================================================
+RÉSULTATS
+============================================================
+📈 WER Score Moyen: 0.0071 (0.71%)
+📊 Nombre total de phrases: 133
+✓ WER minimum: 0.0000
+✗ WER maximum: 0.2500
+============================================================
+
+✓ Processus terminé avec succès!
 ```
 
 ### Aide
