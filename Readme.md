@@ -24,7 +24,7 @@ Ce projet utilise la bibliothèque **Pynini** pour créer un transducteur à ét
 ### Installation des dépendances
 
 ```bash
-pip install pynini
+pip install -r requirements.txt
 ```
 
 **Note pour Windows :** L'installation de Pynini peut nécessiter des outils de compilation. Si vous rencontrez des erreurs, consultez la [documentation officielle de Pynini](https://www.openfst.org/twiki/bin/view/GRM/Pynini).
@@ -32,20 +32,24 @@ pip install pynini
 ## 📁 Structure du projet
 
 ```
-├── create_far.py          # Script de création du fichier FAR
-├── normalize.py           # Script de normalisation de texte
-├── cardinal_numbers.far   # Fichier FAR compilé (généré)
-└── README.md             # Ce fichier
+├── script_sauvegarde.py                        # Script de création du fichier FAR
+├── script.py                                   # Script de normalisation de texte
+├── cardinal_numbers.far                        # Fichier FAR compilé (généré)
+├── script_wer.py                               # Script pour reproduire le score WER obtenu 
+├── Text_Normalisation_Cardinaux_0_a_1000.py    # Script de creation du FST  
+├── Text_Normalisation_Cardinaux_0_a_1000.ypnb  # Script de creation du FST notebook
+├── rapport.pdf                                 # Mon rapport 
+└── README.md                                   # Ce fichier
 ```
 
 ## 🛠️ Utilisation
 
-### Étape 1 : Générer le fichier FAR
+### Étape 1 : si Fichier Far absent : Générer le fichier FAR
 
-Avant la première utilisation, vous devez générer le fichier FAR contenant le FST compilé :
+Si le fichier Far absent, vous devez générer le fichier FAR contenant le FST compilé :
 
 ```bash
-python create_far.py
+python script_sauvegarde.py
 ```
 
 **Sortie attendue :**
@@ -77,21 +81,16 @@ Une fois le fichier FAR créé, vous pouvez normaliser du texte de plusieurs fa�
 #### A. Mode ligne de commande
 
 ```bash
-python normalize.py "5 bonbons"
+python script.py "800 francs"
 ```
-**Résultat :** `cinq bonbons`
+**Résultat :** `huit-cents francs`
 
 **Autres exemples :**
 
 ```bash
-python normalize.py "J'ai 25 ans et 3 chats"
+python script.py "J'ai 25 ans et 3 chats"
 # Résultat : J'ai vingt-cinq ans et trois chats
 
-python normalize.py "Il y a 100 personnes dans la salle"
-# Résultat : Il y a cent personnes dans la salle
-
-python normalize.py "Le train part à 17 heures 42"
-# Résultat : Le train part à dix-sept heures quarante-deux
 ```
 
 #### B. Mode interactif
@@ -99,7 +98,7 @@ python normalize.py "Le train part à 17 heures 42"
 Lancez le script sans arguments pour entrer en mode interactif :
 
 ```bash
-python normalize.py
+python script.py
 ```
 
 **Exemple de session interactive :**
@@ -122,20 +121,12 @@ Texte> quit
 👋 Au revoir!
 ```
 
-#### C. Utiliser un fichier FAR personnalisé
-
-Si vous avez créé un fichier FAR avec un nom différent :
-
-```bash
-python normalize.py -f mon_fichier.far "42 réponses"
-```
-
 ### Aide
 
 Pour afficher l'aide :
 
 ```bash
-python normalize.py --help
+python script.py --help
 ```
 
 ## 📝 Exemples de normalisation
@@ -156,23 +147,14 @@ python normalize.py --help
 
 ### Modifier les règles de normalisation
 
-Pour personnaliser le FST, éditez le fichier `create_far.py` et modifiez les fonctions suivantes :
-
-- `get_digit_fst()` : Chiffres 0-9
-- `get_teen_fst()` : Nombres 10-19
-- `get_tens_fst()` : Dizaines 20-90
-- `get_hundreds_fst()` : Centaines 100-900
-- `build_cardinal_fst()` : Logique de combinaison
+Pour personnaliser le FST, éditez le fichier `Text_Normalisation_Cardinaux_0_a_1000.py` et modifiez les dictionnaires que vous sauhaiter ou certains fst que vous souhaitez modifier. 
 
 Après modification, régénérez le fichier FAR :
 
 ```bash
-python create_far.py
+python script_sauvegarde.py
 ```
 
-### Étendre la plage de nombres
-
-Pour supporter des nombres au-delà de 1000, ajoutez les règles nécessaires dans la fonction `build_cardinal_fst()`.
 
 ## 🐛 Dépannage
 
@@ -187,7 +169,7 @@ pip install pynini
 
 **Solution :** Exécutez d'abord le script de création :
 ```bash
-python create_far.py
+python script_sauvegarde.py
 ```
 
 ### Problème : Erreurs de compilation sous Windows
@@ -195,12 +177,13 @@ python create_far.py
 **Solution :** Pynini nécessite des outils de compilation C++. Installez :
 - [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/)
 - Ou utilisez WSL (Windows Subsystem for Linux)
+- Ou encore installer [via conda-forge](https://pypi.org/project/pynini/#:~:text=While%20Pynini%20is%20neit)
 
 ## 📚 Ressources
 
 - [Documentation Pynini](https://www.openfst.org/twiki/bin/view/GRM/Pynini)
 - [OpenFST](https://www.openfst.org/)
-- [Finite State Transducers](https://en.wikipedia.org/wiki/Finite-state_transducer)
+- [Finite State Transducers](https://fr.wikipedia.org/wiki/Transducteur_fini)
 
 ## 🤝 Contribution
 
@@ -212,13 +195,10 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 4. Pousser vers la branche (`git push origin feature/amelioration`)
 5. Ouvrir une Pull Request
 
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👨‍💻 Auteur
 
-Votre Nom - [Votre GitHub](https://github.com/votre-username)
+FOKA MAGHEN YANN BRONDON- [Votre GitHub](https://github.com/yann214)
 
 ## 🙏 Remerciements
 
@@ -227,6 +207,6 @@ Votre Nom - [Votre GitHub](https://github.com/votre-username)
 
 ---
 
-**Note :** Ce projet a été développé dans le cadre de [description du contexte si applicable].
+**Note :** Ce projet a été développé dans le cadre de la phase de test pour le stage de 3 mois sur la Normalisation de Text offert pas IndabaX.
 
 Pour toute question ou suggestion, n'hésitez pas à ouvrir une issue sur GitHub !
