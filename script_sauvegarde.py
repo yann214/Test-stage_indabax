@@ -1,5 +1,10 @@
 from Text_Normalisation_Cardinaux_0_a_1000 import *
 
+
+# ============================================
+# Creation du fichier FAR
+# ============================================
+
 def create_far_archive(output_path="cardinal_numbers.far"):
     """
     Crée un fichier FAR contenant le FST de normalisation
