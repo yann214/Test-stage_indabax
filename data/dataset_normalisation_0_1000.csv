@@ -1,0 +1,134 @@
+input,reference
+0,zéro
+1,un
+2,deux
+3,trois
+4,quatre
+5,cinq
+6,six
+7,sept
+8,huit
+9,neuf
+10,dix
+11,onze
+12,douze
+13,treize
+14,quatorze
+15,quinze
+16,seize
+17,dix-sept
+18,dix-huit
+19,dix-neuf
+20,vingt
+21,vingt-et-un
+22,vingt-deux
+25,vingt-cinq
+30,trente
+31,trente-et-un
+40,quarante
+41,quarante-et-un
+50,cinquante
+51,cinquante-et-un
+60,soixante
+61,soixante-et-un
+70,soixante-dix
+71,soixante-et-onze
+72,soixante-douze
+80,quatre-vingts
+81,quatre-vingt-un
+82,quatre-vingt-deux
+90,quatre-vingt-dix
+91,quatre-vingt-onze
+99,quatre-vingt-dix-neuf
+100,cent
+101,cent-un
+110,cent-dix
+120,cent-vingt
+121,cent-vingt-et-un
+150,cent-cinquante
+199,cent-quatre-vingt-dix-neuf
+200,deux-cents
+201,deux-cent-un
+250,deux-cent-cinquante
+300,trois-cents
+301,trois-cent-un
+350,trois-cent-cinquante
+400,quatre-cents
+450,quatre-cent-cinquante
+500,cinq-cents
+501,cinq-cent-un
+600,six-cents
+700,sept-cents
+800,huit-cents
+900,neuf-cents
+999,neuf-cent-quatre-vingt-dix-neuf
+1000,mille
+J’ai 3 chiens.,J’ai trois chiens.
+J’ai 21 chats.,J’ai vingt-et-un chats.
+Elle a 72 ans.,Elle a soixante-douze ans.
+Le bus arrive dans 7 minutes.,Le bus arrive dans sept minutes.
+J’ai acheté 81 livres.,J’ai acheté quatre-vingt-un livres.
+Nous avons vendu 80 tickets.,Nous avons vendu quatre-vingts tickets.
+Ils partent dans 14 jours.,Ils partent dans quatorze jours.
+J’ai gagné 100 points.,J’ai gagné cent points.
+Il y a 200 personnes ici.,Il y a deux-cents personnes ici.
+Il y avait 201 invités.,Il y avait deux-cent-un invités.
+La salle contient 350 sièges.,La salle contient trois-cent-cinquante sièges.
+Nous avons parcouru 999 kilomètres.,Nous avons parcouru neuf-cent-quatre-vingt-dix-neuf kilomètres.
+Elle habite au 71 rue Victor-Hugo.,Elle habite au soixante-et-onze rue Victor-Hugo.
+Mon frère a 41 ans.,Mon frère a quarante-et-un ans.
+Il reste 5 places.,Il reste cinq places.
+Le magasin ouvre à 9 h.,Le magasin ouvre à neuf heures.
+Il a dormi 11 heures.,Il a dormi onze heures.
+La facture est de 87 euros.,La facture est de quatre-vingt-sept euros.
+J’ai trois cours à 8 h.,J’ai trois cours à huit heures.
+La boîte pèse 24 kg.,La boîte pèse vingt-quatre kilogrammes.
+Ils ont gagné 101 points.,Ils ont gagné cent-un points.
+Le colis contient 48 pièces.,Le colis contient quarante-huit pièces.
+Elle a lu 19 livres cette année.,Elle a lu dix-neuf livres cette année.
+Le match commence à 15 h.,Le match commence à quinze heures.
+J’ai marché 60 kilomètres.,J’ai marché soixante kilomètres.
+Ce téléphone coûte 399 euros.,Ce téléphone coûte trois-cent-quatre-vingt-dix-neuf euros.
+Il a couru 1000 mètres.,Il a couru mille mètres.
+L’ordinateur pèse 4 kg.,L’ordinateur pèse quatre kilogrammes.
+J’ai mangé 2 pizzas.,J’ai mangé deux pizzas.
+La température est de 31 degrés.,La température est de trente-et-un degrés.
+Nous avons visité 13 villes.,Nous avons visité treize villes.
+Le bébé a 1 an.,Le bébé a un an.
+J’ai dormi 6 heures.,J’ai dormi six heures.
+Il travaille depuis 20 ans.,Il travaille depuis vingt ans.
+Elle a pris 55 photos.,Elle a pris cinquante-cinq photos.
+Le trajet dure 44 minutes.,Le trajet dure quarante-quatre minutes.
+Il a économisé 500 euros.,Il a économisé cinq-cents euros.
+Elle a perdu 501 euros.,Elle a perdu cinq-cent-un euros.
+Nous avons récolté 1000 signatures.,Nous avons récolté mille signatures.
+Le bâtiment a 300 fenêtres.,Le bâtiment a trois-cents fenêtres.
+Il reste 98 sièges.,Il reste quatre-vingt-dix-huit sièges.
+Le livre fait 260 pages.,Le livre fait deux-cent-soixante pages.
+Il a dépensé 420 euros.,Il a dépensé quatre-cent-vingt euros.
+Le sac contient 17 objets.,Le sac contient dix-sept objets.
+Elle parle 28 langues.,Elle parle vingt-huit langues.
+Nous avons 64 participants.,Nous avons soixante-quatre participants.
+J’ai attendu 53 minutes.,J’ai attendu cinquante-trois minutes.
+Le ticket coûte 7 euros.,Le ticket coûte sept euros.
+J’ai cuisiné pour 12 personnes.,J’ai cuisiné pour douze personnes.
+Elle a reçu 350 messages.,Elle a reçu trois-cent-cinquante messages.
+Le stade peut accueillir 800 personnes.,Le stade peut accueillir huit-cents personnes.
+Le repas coûte 75 euros.,Le repas coûte soixante-quinze euros.
+Nous avons vu 90 étoiles.,Nous avons vu quatre-vingt-dix étoiles.
+Il a gagné 4 médailles.,Il a gagné quatre médailles.
+J’ai acheté 33 fleurs.,J’ai acheté trente-trois fleurs.
+Nous avons 62 dossiers.,Nous avons soixante-deux dossiers.
+Le mur fait 220 centimètres.,Le mur fait deux-cent-vingt centimètres.
+Elle a couru 14 kilomètres.,Elle a couru quatorze kilomètres.
+Il a répondu à 350 mails.,Il a répondu à trois-cent-cinquante mails.
+J’ai visité 5 pays.,J’ai visité cinq pays.
+Le film dure 102 minutes.,Le film dure cent-deux minutes.
+Elle a gagné 800 points.,Elle a gagné huit-cents points.
+Nous avons lu 47 pages.,Nous avons lu quarante-sept pages.
+Il a frappé 88 coups.,Il a frappé quatre-vingt-huit coups.
+J’ai 29 ans.,J’ai vingt-neuf ans.
+Le jardin fait 300 mètres carrés.,Le jardin fait trois-cents mètres carrés.
+Tu dois payer 15 euros.,Tu dois payer quinze euros.
+Elle a gagné 401 euros.,Elle a gagné quatre-cent-un euros.
+Le taxi coûte 90 euros.,Le taxi coûte quatre-vingt-dix euros.

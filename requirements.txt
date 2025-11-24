@@ -1,0 +1,6 @@
+numpy
+pandas
+pynini
+graphviz
+Levenshtein
+jiwer
